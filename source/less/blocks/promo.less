@@ -1,0 +1,472 @@
+.promo {
+  padding-top: 46px;
+  padding-bottom: 240px;
+
+  background: #f3f2da;
+}
+
+
+.promo__title {
+  padding: 0;
+  margin: 0 0 25px;
+
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.promo__pc-nav {
+  display: none;
+}
+
+
+.promo__accordion-title {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  padding: 25px 35px 25px 65px;
+  margin: 10px 0 0 0;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: @accordion-title-color;
+
+  background-color: rgba(#FFFFFF, .6);
+
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+
+    content: "";
+    display: block;
+    width: 35px;
+    height: 30px;
+    margin-top: -15px;
+
+    background-image: url(../img/trade-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+
+    border-top: 2px solid @main-color;
+    border-right: 2px solid @main-color;
+    opacity: .6;
+
+    transform: rotate(135deg);
+  }
+
+  &--two {
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+
+      content: "";
+      display: block;
+      width: 35px;
+      height: 30px;
+      margin-top: -15px;
+
+      background-image: url(../img/invest-icon.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--three {
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+
+      content: "";
+      display: block;
+      width: 31px;
+      height: 36px;
+      margin-top: -18px;
+
+      background-image: url(../img/investor-icon.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+.in {
+  .promo__accordion-title {
+    &::after {
+      margin-top: -3px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+.promo__pc-accordion-title {
+  display: none;
+}
+
+
+.promo__accordion-content {
+  margin-bottom: 30px;
+  display: none;
+}
+
+
+.promo__accordion-desc {
+  margin: 0;
+  padding: 23px 10px 33px 10px;
+
+  color: @accordion-par-color;
+}
+
+
+.promo__accordion-subtitle {
+  padding-left: 10px;
+  margin: 0 0 27px;
+
+  font-size: 24px;
+  font-weight: 400;
+  color: @title-color;
+}
+
+
+.promo__accordion-wrapper {
+  margin: 0 0 22px;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.promo__accordion-item {
+  display: flex;
+}
+
+
+.promo__accordion-unit {
+  display: block;
+  padding-left: 10px;
+  margin-right: 20px;
+
+  font-size: 32px;
+  color: @action-color;
+}
+
+
+.promo__accordion-text {
+  margin: 0 0 15px;
+
+  color: @accordion-par2-color;
+}
+
+
+.promo__accordion-btn {
+  display: inline-block;
+  padding: 16px 27px;
+
+  font-size: 18px;
+  color: #FEFFFF;
+
+  background-color: @action-color;
+  border-radius: 3px;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: #027662;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+
+.promo__accordion-photo {
+  display: block;
+  width: 376px;
+  height: auto;
+  margin-left: -20px;
+}
+
+
+
+
+
+
+
+@media @notebook {
+  .promo {
+    position: relative;
+    background: none;
+  }
+
+  .promo__pc-bg-bott {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 905px;
+
+    background-image: url(../img/photo-inner-pc.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 1900px 905px;
+  }
+
+
+  .promo__pc-wrapper-js {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    min-height: 680px;
+    padding-top: 228px;
+    padding-bottom: 0;
+
+    background-image: url(../img/preview.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1900px 967px;
+    opacity: 1;
+  }
+
+
+  .promo__title {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    margin: 0 0 78px;
+
+    opacity: 1;
+  }
+
+
+
+  .promo__pc-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    opacity: 1;
+  }
+
+
+  .promo__pc-list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+
+  .promo__pc-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 365px;
+    height: 365px;
+
+    background-color: rgba(#FFFFFF, .6);
+    border-radius: 50%;
+  }
+
+
+  .promo__pc-link {
+    width: 350px;
+    height: 350px;
+    border: solid 2px rgba(@action-color, 0);
+    border-radius: 50%;
+    transition: border .2s linear;
+
+    &:hover {
+      border: solid 2px rgba(@action-color, 1);
+      border-radius: 50%;
+    }
+  }
+
+
+  .promo__pc-link-item {
+    position: relative;
+
+    padding-top: 200px;
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 400;
+    color: #242424;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      content: "";
+      display: block;
+      width: 90px;
+      height: 70px;
+      margin-left: -45px;
+
+      background-image: url(../img/trade-icon-pc.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--two {
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        content: "";
+        display: block;
+        width: 90px;
+        height: 70px;
+        margin-left: -45px;
+
+        background-image: url(../img/invest-icon-pc.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--three {
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        content: "";
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin-left: -45px;
+        margin-top: -20px;
+
+        background-image: url(../img/investor-icon-pc.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+
+
+
+
+  .promo__accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .promo__flex-wrapper {
+    flex-basis: 33.333%;
+  }
+
+  .promo__panel-heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .promo__pc-accordion-title {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 25px 25px;
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 400;
+    color:  rgba(#2e2e2e, .8);
+    text-align: center;
+
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+
+      background-color: @action-color;
+      opacity: 0;
+      transition: opacity .2s linear;
+    }
+  }
+
+
+  .promo__pc-accordion-title {
+    transition: color .2s linear;
+    &:hover {
+      color: @action-color;
+      &::before {
+        opacity: .5;
+      }
+    }
+  }
+
+  .promo__accordion-content {
+    position: absolute;
+
+    max-width: 500px;
+    margin-bottom: 30px;
+    display: none;
+  }
+
+
+  .promo__accordion-title {
+    display: none;
+  }
+
+
+  .in {
+    .promo__accordion-content {
+      position: absolute;
+      display: block;
+    }
+  }
+
+
+  .promo__accordion-photo {
+    display: none;
+    margin-left: 0;
+  }
+
+
+  .active {
+    display: block;
+  }
+
+}
